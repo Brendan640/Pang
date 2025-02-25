@@ -99,6 +99,9 @@ class Game
 			case "quit":
 				wantToQuit = true;
 				break;
+			case "look":
+				LookAround(command);
+				break;
 		}
 
 		return wantToQuit;
@@ -142,5 +145,11 @@ class Game
 
 		currentRoom = nextRoom;
 		Console.WriteLine(currentRoom.GetLongDescription());
+	}
+
+	private void LookAround(Command command)
+	{
+		Console.WriteLine(currentRoom.GetLongDescription());
+		return;
 	}
 }
