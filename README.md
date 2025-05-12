@@ -1,4 +1,4 @@
-# Pang
+# Zuul
 
 A boring textadventure.
 
