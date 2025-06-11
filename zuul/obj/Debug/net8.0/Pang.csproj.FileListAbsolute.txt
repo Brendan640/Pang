@@ -1,0 +1,14 @@
+C:\Users\Brend\Documents\Schooljaar2024-2025\periode 4\module 1\zuul\bin\Debug\net8.0\Pang.exe
+C:\Users\Brend\Documents\Schooljaar2024-2025\periode 4\module 1\zuul\bin\Debug\net8.0\Pang.deps.json
+C:\Users\Brend\Documents\Schooljaar2024-2025\periode 4\module 1\zuul\bin\Debug\net8.0\Pang.runtimeconfig.json
+C:\Users\Brend\Documents\Schooljaar2024-2025\periode 4\module 1\zuul\bin\Debug\net8.0\Pang.dll
+C:\Users\Brend\Documents\Schooljaar2024-2025\periode 4\module 1\zuul\bin\Debug\net8.0\Pang.pdb
+C:\Users\Brend\Documents\Schooljaar2024-2025\periode 4\module 1\zuul\obj\Debug\net8.0\Pang.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brend\Documents\Schooljaar2024-2025\periode 4\module 1\zuul\obj\Debug\net8.0\Pang.AssemblyInfoInputs.cache
+C:\Users\Brend\Documents\Schooljaar2024-2025\periode 4\module 1\zuul\obj\Debug\net8.0\Pang.AssemblyInfo.cs
+C:\Users\Brend\Documents\Schooljaar2024-2025\periode 4\module 1\zuul\obj\Debug\net8.0\Pang.csproj.CoreCompileInputs.cache
+C:\Users\Brend\Documents\Schooljaar2024-2025\periode 4\module 1\zuul\obj\Debug\net8.0\Pang.dll
+C:\Users\Brend\Documents\Schooljaar2024-2025\periode 4\module 1\zuul\obj\Debug\net8.0\refint\Pang.dll
+C:\Users\Brend\Documents\Schooljaar2024-2025\periode 4\module 1\zuul\obj\Debug\net8.0\Pang.pdb
+C:\Users\Brend\Documents\Schooljaar2024-2025\periode 4\module 1\zuul\obj\Debug\net8.0\Pang.genruntimeconfig.cache
+C:\Users\Brend\Documents\Schooljaar2024-2025\periode 4\module 1\zuul\obj\Debug\net8.0\ref\Pang.dll
