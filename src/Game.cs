@@ -28,7 +28,7 @@ class Game
 		outside.AddExit("east", theatre);
 		outside.AddExit("south", lab);
 		outside.AddExit("west", pub);
-		outside.AddExit("up",pub);
+		outside.AddExit("up", pub);
 
 
 		theatre.AddExit("west", outside);
@@ -47,8 +47,10 @@ class Game
 		// ...
 
 		// Start game outside
-		player.currentRoom = outside;
-}
+		player.CurrentRoom = outside;
+
+		Item note = new Item(1, "Rock.");
+	}
 
 	//  Main play routine. Loops until end of play.
 	public void Play()
@@ -76,7 +78,7 @@ class Game
 		Console.WriteLine("Zuul is a new, incredibly boring adventure game.");
 		Console.WriteLine("Type 'help' if you need help.");
 		Console.WriteLine();
-		Console.WriteLine(player.currentRoom.GetLongDescription());
+		Console.WriteLine(player.CurrentRoom.GetLongDescription());
 	}
 
 	// Given a command, process (that is: execute) the command.
@@ -105,6 +107,9 @@ class Game
 				break;
 			case "look":
 				LookAround(command);
+				break;
+			case "status":
+				PrintStatus();
 				break;
 		}
 
@@ -140,20 +145,26 @@ class Game
 		string direction = command.SecondWord;
 
 		// Try to go to the next room.
-		Room nextRoom = player.currentRoom.GetExit(direction);
+		Room nextRoom = player.CurrentRoom.GetExit(direction);
 		if (nextRoom == null)
 		{
 			Console.WriteLine("There is no door to " + direction + "!");
 			return;
 		}
-
-		player.currentRoom = nextRoom;
-		Console.WriteLine(player.currentRoom.GetLongDescription());
+		player.Damage(10);
+		player.CurrentRoom = nextRoom;
+		Console.WriteLine(player.CurrentRoom.GetLongDescription());
 	}
 
 	private void LookAround(Command command)
 	{
-		Console.WriteLine(player.currentRoom.GetLongDescription());
+		Console.WriteLine( player.CurrentRoom.GetLongDescription());
 		return;
 	}
+
+	private void PrintStatus()
+	{
+		Console.WriteLine(" Health is:" + player.Health);
+	}
 }
+
