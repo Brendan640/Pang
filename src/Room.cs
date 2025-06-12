@@ -58,4 +58,18 @@ class Room
 
 		return str;
 	}
+    //field
+    private Inventory chest;
+
+    //property
+    public Inventory Chest
+    {
+        get { return chest; }
+
+    }
+    public Room()
+    {
+        // an  big Inventory for the rooms
+        chest = new Inventory(999999999);
+    }
 }
