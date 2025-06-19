@@ -70,6 +70,6 @@ class Room
     public Room()
     {
         // an  big Inventory for the rooms
-        chest = new Inventory(999999999);
+        chest = new Inventory(999999);
     }
 }

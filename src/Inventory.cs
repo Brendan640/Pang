@@ -1,5 +1,3 @@
-using System.Runtime.CompilerServices;
-
 class Inventory
 {
     private int maxWeight;
@@ -14,7 +12,8 @@ class Inventory
 
     public bool Put(string itemName, Item item)
     {
-        return false;
+        items.Add(itemName, item);
+        return true;
     }
 
     public Item Get(string itemName)
@@ -31,7 +30,7 @@ class Inventory
 
     public int FreeWeight()
     {
-        return 0;
+        return maxWeight - TotalWeight();
     }
 
 

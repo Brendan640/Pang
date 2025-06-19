@@ -14,6 +14,9 @@ class Game
 		CreateRooms();
 	}
 
+	private Item rock = new Item(1, "Rock.");
+	private Item book = new Item(2, "Books.");
+
 	// Initialise the Rooms (and the Items)
 	private void CreateRooms()
 	{
@@ -29,6 +32,7 @@ class Game
 		outside.AddExit("south", lab);
 		outside.AddExit("west", pub);
 		outside.AddExit("up", pub);
+		outside.chest.Put("Rock", rock);
 
 
 		theatre.AddExit("west", outside);
@@ -38,6 +42,7 @@ class Game
 
 		lab.AddExit("north", outside);
 		lab.AddExit("east", office);
+		lab.chest.Put("Book", book);
 
 		office.AddExit("west", lab);
 
@@ -48,8 +53,6 @@ class Game
 
 		// Start game outside
 		player.CurrentRoom = outside;
-
-		Item note = new Item(1, "Rock.");
 	}
 
 	//  Main play routine. Loops until end of play.
